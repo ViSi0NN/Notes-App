@@ -1,4 +1,4 @@
-import React, { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useState, type FormEvent } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import AuthLayout from '../components/common/AuthLayout';
 import Input from '../components/common/Input';
