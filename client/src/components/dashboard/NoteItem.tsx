@@ -13,7 +13,7 @@ interface NoteItemProps {
 const NoteItem: React.FC<NoteItemProps> = ({ note, onDelete }) => {
   return (
     <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg mx-4 sm:mx-0">
-      <p className="text-gray-900 font-medium flex-1">{note.title}</p>
+      <p className="text-gray-900 font-medium flex-1 break-words min-w-0">{note.title}</p>
       <button
         onClick={() => onDelete(note._id)}
         className="ml-4 p-2 text-gray-400 hover:text-red-500 transition-colors duration-200"

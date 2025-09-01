@@ -3,6 +3,7 @@ import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 import Dashboard from '../pages/Dashboard';
 import ProtectedRoute from './ProtectedRoute';
+import NotFound from '../components/dashboard/NotFound';
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         } 
       />
       <Route path="/" element={<SignIn />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
